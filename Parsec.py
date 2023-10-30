@@ -34,7 +34,6 @@ for link in download_links:
         with open(f'dataset/Cats/{str(name_id).zfill(4)}.jpg', 'wb') as f:
             for chunk in r.iter_content(1024):
                 f.write(chunk)
-    print(name_id)
     name_id+=1
     
 
@@ -60,7 +59,6 @@ for link in download_links:
         with open(f'dataset/Dogs/{str(name_id).zfill(4)}.jpg', 'wb') as f:
             for chunk in r.iter_content(1024):
                 f.write(chunk)
-    print(name_id)
     name_id+=1
 
 print('END OF LIFE')
